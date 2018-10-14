@@ -36,5 +36,9 @@ To make sure we all understand each other's code, we have a unified standard to 
 
 The standard is derived from [JetBrain's Resharper](https://www.jetbrains.com/resharper/) default settings. ReSharper is a Visual Studio extension that helps you with styling, debugging and IntelliSense. If you follow its advice, you will conform to out style.
 
+### Exceptions
+* Do not prefix private members with `_` as it serves only as clutter.
+* Use `if(variable is null)` instead of `if(variable == null)`
+
 ### Or do it manually
 Feel free to check out [MSDN Coding Conventions](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/inside-a-program/coding-conventions). We, however, recommend you look through the project to better understand the style we use. Don't worry, nobody will reject your contribution because of a line-break.
