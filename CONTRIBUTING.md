@@ -42,3 +42,9 @@ The standard is derived from [JetBrain's Resharper](https://www.jetbrains.com/re
 
 ### Or do it manually
 Feel free to check out [MSDN Coding Conventions](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/inside-a-program/coding-conventions). We, however, recommend you look through the project to better understand the style we use. Don't worry, nobody will reject your contribution because of a line-break.
+
+## Architecture
+There are just a few rules in terms of architecture. Mainly considering dependencies.
+
+* Only `CommunityBot.Discord` is allowed to depend on any Discord library.
+    * Any project referencing `CommunityBot.Discord` may only depend on abstract classes or interfaces located in its own project and implemented by the referenced project.
